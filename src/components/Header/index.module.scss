@@ -1,0 +1,117 @@
+@use "@/styles/main.scss" as *;
+@use "@/styles/mixins" as *;
+
+.header {
+  position: relative;
+
+  width: 90%;
+  min-width: 360px;
+  max-width: 1140px;
+  height: 90px;
+
+  border-bottom: 5px solid var(--color-accent);
+  padding: 15px 30px;
+  border-radius: 100px;
+  margin: 10px auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &_text {
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--color-black);
+    }
+  }
+
+  &__menu {
+    &_row {
+      display: none;
+
+      @include respond("lg") {
+        display: block;
+      }
+    }
+
+    &_burger {
+      display: none;
+
+      &.open {
+        display: block;
+        position: absolute;
+        padding: 20px;
+        top: 87px;
+        width: 84%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: 10px solid var(--color-accent);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        @include respond("md") {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  &__tel {
+    display: none;
+
+    @include respond("lg") {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    &_text {
+      color: var(--color-black);
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &_number {
+      padding: 3px 8px;
+      color: var(--color-black);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      border-spacing: 5px;
+
+      background: var(--color-accent);
+      border-radius: 10px;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background: var(--color-black);
+        border-radius: 20px;
+        color: var(--color-white);
+        border-bottom: 3px solid var(--color-accent);
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
+}
+
+.burgerBtn {
+  display: block;
+  padding: 8px 8px 5px;
+  border: none;
+  background-color: var(--color-accent);
+  border-radius: 20px;
+
+  @include respond("lg") {
+    display: none;
+  }
+}
