@@ -3,7 +3,7 @@
 
 .product {
   width: 360px;
-  height: 324px;
+  height: 150px;
   border-radius: 32px;
   padding: 15px;
 
@@ -18,11 +18,13 @@
   color: var(--color-white);
 
   @include respond("md") {
-    width: 490px;
+    width: 650px;
+    height: 200px;
   }
 
   @include respond("lg") {
     width: 380px;
+    height: 324px;
   }
 
   @include respond("xl") {
