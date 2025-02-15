@@ -2,6 +2,7 @@
 @use "@/styles/mixins.scss" as *;
 
 .product {
+  position: relative;
   width: 360px;
   height: 150px;
   border-radius: 32px;
@@ -17,6 +18,8 @@
   justify-content: center;
   color: var(--color-white);
 
+  z-index: 1;
+
   @include respond("md") {
     width: 650px;
     height: 200px;
@@ -29,5 +32,14 @@
 
   @include respond("xl") {
     width: 460px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    border-radius: 32px;
   }
 }
