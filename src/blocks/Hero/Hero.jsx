@@ -12,7 +12,7 @@ export default function Hero() {
           Солнечногорский р-он, г. Клин, г. Зеленоград, г. Истра, пос. Поварово,
           Хоругвино, Есипово, Ложки.
         </p>
-        <a href="tel:+79166181481" className={styles.hero__left_tel}>
+        <a href="tel:+79166181482" className={styles.hero__left_tel}>
           Заказать услугу
         </a>
       </div>

@@ -81,8 +81,8 @@ export default function Header() {
 
         <div className={styles.header__tel}>
           <span className={styles.header__tel_text}>Нужна помощь?</span>
-          <a href="tel:+79166181481" className={styles.header__tel_number}>
-            +7 916 618-14-81
+          <a href="tel:+79166181482" className={styles.header__tel_number}>
+            +7 916 618-14-82
           </a>
         </div>
 
