@@ -22,10 +22,10 @@
   }
 
   @include respond("lg") {
-    width: 390px;
+    width: 380px;
   }
 
   @include respond("xl") {
-    width: 490px;
+    width: 460px;
   }
 }
