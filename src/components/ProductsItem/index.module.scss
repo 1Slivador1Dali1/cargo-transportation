@@ -1,0 +1,31 @@
+@use "@/styles/main.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.product {
+  width: 360px;
+  height: 324px;
+  border-radius: 32px;
+  padding: 15px;
+
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.08);
+  background: no-repeat center / cover;
+  font-weight: 700;
+  font-size: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+
+  @include respond("md") {
+    width: 490px;
+  }
+
+  @include respond("lg") {
+    width: 390px;
+  }
+
+  @include respond("xl") {
+    width: 490px;
+  }
+}
