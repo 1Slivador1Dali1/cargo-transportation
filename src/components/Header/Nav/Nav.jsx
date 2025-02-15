@@ -9,7 +9,7 @@ Nav.propTypes = {
 const links = [
   {
     id: 1,
-    to: "/",
+    to: "/#hero",
     text: "Главная",
   },
   {

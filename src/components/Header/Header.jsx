@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { HashLink as Link } from "react-router-hash-link";
 import Nav from "./Nav/Nav";
 import styles from "./index.module.scss";
 import { useEffect, useRef, useState } from "react";
@@ -70,7 +70,7 @@ export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <Link to="/" className={styles.header__logo}>
+        <Link to="/#hero" className={styles.header__logo}>
           <Logo />
           <p className={styles.header__logo_text}>Доставка | Аренда</p>
         </Link>
