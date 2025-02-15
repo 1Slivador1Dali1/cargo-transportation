@@ -87,7 +87,11 @@ export default function Header() {
         </div>
 
         <button className={styles.burgerBtn} onClick={toggleMenu}>
-          {isMenuOpen ? <RiCloseLargeFill /> : <GiHamburgerMenu />}
+          {isMenuOpen ? (
+            <RiCloseLargeFill className={styles.burgerBtn__icon} />
+          ) : (
+            <GiHamburgerMenu className={styles.burgerBtn__icon} />
+          )}
         </button>
 
         <div
