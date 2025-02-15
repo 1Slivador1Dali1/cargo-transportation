@@ -5,17 +5,17 @@ const products = [
   {
     id: 1,
     title: "Аренда спецтехники",
-    background: "/src/assets/truckCrane.webp",
+    background: "/public/truckCrane.webp",
   },
   {
     id: 2,
     title: "Уборка снега",
-    background: "/src/assets/showBlower.webp",
+    background: "/public/showBlower.webp",
   },
   {
     id: 3,
     title: "Строительные материалы",
-    background: "/src/assets/bulkMaterials.webp",
+    background: "/public/bulkMaterials.webp",
   },
 ];
 

@@ -20,7 +20,7 @@ export default function Hero() {
       <div className={styles.hero__right}>
         <img
           className={styles.hero__right_img}
-          src="src/assets/ivanovec1.webp"
+          src="public/ivanovec1.webp"
           alt="Вездеход камаз манипулятор"
         />
       </div>
